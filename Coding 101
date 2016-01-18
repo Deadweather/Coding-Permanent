@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<link rel="prefetch" href="http://www.w3schools.com/"></link>
+	<head>
+		<meta charset="utf-8">
+		<title>GAME1003_Midterm_HaradhurNicholas</title>
+		<style>
+		a:hover
+			{
+				color: red;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GAME1003 Midterm Exam</h1>
+		<br>
+		<p>
+		Question 1: W3Schools is a great resource for html, CSS and JavaScript material. Create a clickable link to the W3Schools main page below.
+		</p>
+		Click <a href="http://www.w3schools.com/" target="_blank">Here</a> to go to w3schools.
+		<br><br>
+		<p>
+		Question 2: JavaScript is very powerful and we can even change a CSS style with it by accessing an element reference and then its _______ attribute:
+		</p>
+		A) .css<br>
+		B) .script<br>
+		<strong> C) .style</strong><br>
+		D) None of the above.<br>
+		<br><br>
+		<p>
+		Question 3: The JavaScript function to create a reference to an element in the html document that has been given an id attribute is:
+		</p>
+		A) .querySelector()<br>
+		<div style="color:green">
+		<strong> B) .getElementById()</strong><br>
+		</div>
+		C) Both A & B work<br>
+		D) None of the above<br>
+		<br></br>
+		<p>
+		Question 4: Find a G-rated image and add a tag for it in the html below. The formatting of the image doesn’t matter initially as a later question will require you to set some style via JavaScript for it.
+		</p>
+		<div class="myDivs" id="pic">
+		<img src="http://vignette3.wikia.nocookie.net/ssb/images/f/fe/Falcomeleeclear.png/revision/latest?cb=20140227140634">
+		</div>
+		<br><br>
+		<p>
+		Question 5: Create a simple button however you like that calls a JavaScript function called changeStyle(). Set the innerHTML of the button to: TOGGLE BACKGROUND!
+		</p>
+		<button>Click Me!</button>
+		<br>
+	</body>
+	<script>
+	var button = document.querySelector("button");
+	var x = false;
+	
+	document.getElementById("pic").style.border = "3px solid blue";
+	
+	button.addEventListener("click", changeStyle);
+	
+	function changeStyle()
+	{	
+		if (x == false) 
+			{document.body.style.backgroundColor="purple"
+			x = true}
+		else 
+			{document.body.style.backgroundColor="white"
+			x = false;}
+	}
+	</script>
+<html>
